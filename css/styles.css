@@ -1,0 +1,125 @@
+body{
+    background-color: #34495E;
+    color: #EAECEE;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.4em;
+}
+.title{
+    color: #34495E;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+a{
+    color: #EBEDEF;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+.container{
+    background-color: #566573;
+    width: 80%; /*960px*/
+    margin: 30px auto;
+    /*overflow: hidden;*/
+    padding: 10px;
+    border-radius: 3px;
+}
+.nav{
+  height: 40px;
+  background-color: #EBEDEF;
+  border-radius: 3px;  
+  text-align: right;
+}
+.nav a{
+    color: #2E4053;
+}
+.nav ul{
+    padding-top: 10px;
+    padding-left: 13px;
+}
+.nav li{
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+    /*float: right;*/
+}
+.nav li:hover{
+    color: #2E4053;
+    font-weight: bold;
+}
+.nav .active{
+    color: #34495E;
+    font-weight: bold;
+}
+.main{
+    float: left;
+    width: 60%;
+}
+.sidebar{
+    position: sticky;
+    top: 10px;
+    background-color:  #2E4053;
+    margin-top: 20px;
+    padding: 10px;
+    float: right;
+    width: 30%;
+    border-radius: 3px;
+}
+.clr{
+   clear: both; 
+}
+.footer{
+    text-align:center;
+    padding: 10px;
+    background-color: #EBEDEF;
+    border-radius: 3px;
+}
+.footer p{
+    color: #2E4053;
+}
+/*Button more*/
+.services a{
+    padding: 6px;
+    font-size: 1em;
+    color: #EAECEE;
+    background-color: #2C3E50;
+    border-radius: 3px;
+}
+.services a:hover{
+    color: #2C3E50;
+    background-color: #EAECEE;
+    border: solid 2px #2C3E50;;
+}
+
+.services li{
+    border-bottom: 2px dashed;
+    padding-bottom: 20px;
+}
+/*Form*/
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;   
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+}
+textarea{
+    resize: none;
+}
+form button{
+    width: 90px;
+    padding: 5px;
+    font-size: 1em;
+    color: #EAECEE;
+    background-color: #2C3E50;
+    border-radius: 2px;   
+    margin-bottom: 15px;
+}
+form button:hover{
+    color: #2C3E50;
+    background-color: #EAECEE;
+    border: solid 2px #2C3E50;;
+}
