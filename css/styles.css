@@ -4,7 +4,20 @@ body{
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.4em;
 }
+/*logo*/
+.header img{
+    position: absolute;
+    top: 30px;
+    left: 16%;
+    z-index: 0;
+    height: 80px;
+    width: auto;
+    background-repeat: no-repeat;
+    
+}
 .title{
+    position: relative;
+    z-index: 1;
     color: #34495E;
     font-size: 40px;
     font-variant: small-caps;
@@ -106,9 +119,6 @@ input, textarea{
 textarea{
     resize: none;
 }
-textarea{
-    resize: none;
-}
 form button{
     width: 90px;
     padding: 5px;
@@ -122,4 +132,36 @@ form button:hover{
     color: #2C3E50;
     background-color: #EAECEE;
     border: solid 2px #2C3E50;;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 900px){
+    .main{
+        width: 50%;
+    }
+    .sidebar{
+        width: 40%;
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 600px){
+    /*logo*/
+    .header img{
+        left: 25%;
+    }
+    .main{
+        float: none;
+        width: 100%;
+    }
+    .sidebar{
+        float:none;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    /*form*/
+    form input, form textarea{
+        width: 95%;
+    }
+    
 }
