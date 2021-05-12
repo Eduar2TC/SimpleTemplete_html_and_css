@@ -131,7 +131,52 @@ form button{
 form button:hover{
     color: #2C3E50;
     background-color: #EAECEE;
-    border: solid 2px #2C3E50;;
+    border: solid 2px #2C3E50;
+}
+
+/*Opinion cards*/
+.card-user{
+    float: left;
+    width: 46.5%;
+    color: #2E4053;
+    background-color: #2C3E50;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.card-user:nth-child(2){
+    margin-left: 10px;
+}
+.card-user .profile{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background-color: #EAECEE;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.card-user .profile{
+    text-align: center;
+}
+.profile .name{
+    font-weight: bold;
+}
+.profile p{
+    font-size: small;
+}
+.card-user .opinion-title{
+    color: #EAECEE;
+    margin: 10px;
+    text-align: center;
+    border-bottom-color: tomato;
+}
+.card-user .opinion{
+    color: #EAECEE;
+    float: right;
+    width: 60%;
+    padding: 5px;
+}
+.profile img{
+    width: 80px;
 }
 
 /*Media queries*/
@@ -142,6 +187,21 @@ form button:hover{
     .sidebar{
         width: 40%;
         font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 805px) {
+    .card-user{
+        width: 100%;
+    }
+    .card-user:nth-child(2){
+        margin-left: 0px;
+    }
+    .card-user .profile{
+        width: 30%;
+    }
+    .card-user .opinion{
+        width: 50%;
+
     }
 }
 @media only screen and (max-width: 600px){
@@ -155,6 +215,7 @@ form button:hover{
     }
     .sidebar{
         float:none;
+        position: static;
         width: 95%;
         margin-bottom: 20px;
     }
@@ -165,3 +226,20 @@ form button:hover{
     }
     
 }
+@media only screen and (max-width: 480px){
+
+}
+@media only screen and (max-width: 320){
+
+}
+
+/*btn-floating*/
+/*.btn-floating{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: lightslategray;
+}*/
